@@ -1,2 +1,2 @@
 # C_Programming
-Programs and assignments for Logic Building batch - C
+Practice programs in C to build strong programming basics.
