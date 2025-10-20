@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+//////////////////////////////////////////////////////////////////////////
+//
+//  Function name:  Divide
+//  Description:    Division of two numbers
+//  Input:          Integer, Integer
+//  Output:         Integer
+//  Author:         Mrunmai Jitendra Khadpe
+//  Date:           19/10/20025
+//
+//////////////////////////////////////////////////////////////////////////
+
+int Divide(int iNo1, int iNo2)
+{
+    int iAns=0;
+
+    if(iNo1 == 0)
+    {
+        return -1;  
+    }
+
+    iAns = iNo1 / iNo2;
+
+    return iAns;
+}
+
+int main()
+{
+    int iValue1=15,iValue2=5;
+    int iRet = 0;
+
+    iRet = Divide(iValue1, iValue2);
+    printf("Division is %d",iRet);
+    
+    return 0;
+}
