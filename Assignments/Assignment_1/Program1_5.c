@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////////
 //
 //  Function name:  Accept
-//  Description:    print number of * thst user give
+//  Description:    print the number of * as the input given by user
 //  Input:          Integer
 //  Output:         Void
 //  Author:         Mrunmai Jitendra Khadpe
