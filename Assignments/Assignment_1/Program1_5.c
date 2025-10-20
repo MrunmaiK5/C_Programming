@@ -1,5 +1,16 @@
 #include<stdio.h>
 
+//////////////////////////////////////////////////////////////////////////
+//
+//  Function name:  Accept
+//  Description:    print number of * thst user give
+//  Input:          Integer
+//  Output:         Void
+//  Author:         Mrunmai Jitendra Khadpe
+//  Date:           19/10/20025
+//
+//////////////////////////////////////////////////////////////////////////
+
 void Accept(int iNo)
 {
     int iCnt=0;
