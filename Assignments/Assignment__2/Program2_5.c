@@ -3,7 +3,7 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Function name:  Display
+//  Function name:  ChkEven
 //  Description:    Chek if number is even or odd
 //  Input:          Integer
 //  Output:         Integer
