@@ -6,7 +6,7 @@ typedef int BOOL;
 
 //////////////////////////////////////////////////////////////////////////
 //
-//  Function name:  DisplayConvert
+//  Function name:  ChkVowel
 //  Description:    Convert case of input character and display
 //  Input:          Character
 //  Output:         BOOL(integer)

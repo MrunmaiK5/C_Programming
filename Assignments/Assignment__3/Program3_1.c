@@ -2,7 +2,7 @@
 
 //////////////////////////////////////////////////////////////////////////
 //
-//  Function name:  PruntEven
+//  Function name:  PrintEven
 //  Description:    Print even numbers of the number given by user
 //  Input:          Integer
 //  Output:         Integer

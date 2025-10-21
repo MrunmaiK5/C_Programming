@@ -2,7 +2,7 @@
 
 //////////////////////////////////////////////////////////////////////////
 //
-//  Function name:  PrintEven
+//  Function name:  DisplayFactor
 //  Description:    Print even factors till user's input number
 //  Input:          Integer
 //  Output:         Integer
