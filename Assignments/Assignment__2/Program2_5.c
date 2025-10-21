@@ -4,7 +4,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Function name:  ChkEven
-//  Description:    Chek if number is even or odd
+//  Description:    Chek if number given is even or odd
 //  Input:          Integer
 //  Output:         Integer
 //  Author:         Mrunmai Jitendra Khadpe
