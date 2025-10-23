@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function name:  Display
+//  Description:    Print a pattern
+//  Input:          Integer
+//  Output:         Void
+//  Author:         Mrunmai Jitendra Khadpe
+//  Date:           23/10/20025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void Display(int iNo)
+{
+    int iCnt=0;
+
+    if (iNo<0)
+    {
+        iNo=-iNo;
+    }
+    
+    for(iCnt=1; iCnt<=iNo;iCnt++)
+    {
+        printf("*\t");
+    }
+
+    for(iCnt=1; iCnt<=iNo;iCnt++)
+    {
+        printf("#\t");
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Time Complexity: O(1)
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue=0;
+
+    printf("Enter a number: ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
+    return 0;
+}
