@@ -1,0 +1,44 @@
+#include<stdio.h>
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function name:  Pattern
+//  Description:    Accepts a number from user and print that number of $ and * on screen
+//  Input:          Integer
+//  Output:         Void
+//  Author:         Mrunmai Jitendra Khadpe
+//  Date:           23/10/20025
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+void Pattern(int iNo)
+{
+    int iCnt=0;
+    if (iNo<0)
+    {
+        iNo=-iNo;
+    }
+    
+    for(iCnt=1; iCnt<=iNo; iCnt++)
+    {
+        printf("$\t*\t");
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Time Complexity: O(n)
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue=0;
+
+    printf("Enter a number: ");
+    scanf("%d",&iValue);
+
+    Pattern(iValue);
+
+    return 0;
+}
