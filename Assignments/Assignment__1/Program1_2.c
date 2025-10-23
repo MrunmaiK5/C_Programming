@@ -2,10 +2,10 @@
 
 //////////////////////////////////////////////////////////////////////////
 //
-//  Function name:  Divide
+//  Function name:  Display
 //  Description:    Display 5 times Marvellous on screen
 //  Input:          None
-//  Output:         Integer
+//  Output:         Void
 //  Author:         Mrunmai Jitendra Khadpe
 //  Date:           19/10/20025
 //
