@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function name:  print_odd_number
+//  Description:    Displays odd numbers till number entered by user.
+//  Input:          Integer
+//  Output:         Void
+//  Author:         Mrunmai Jitendra Khadpe
+//  Date:           24/10/20025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void print_odd_number(int limit)
+{
+    int iCnt=0;
+
+    if(limit<0)
+    {
+        limit=-limit;
+    }
+    for(iCnt=1; iCnt<=limit; iCnt++)
+    {
+        if(iCnt%2 != 0)
+        {
+            printf("%d\t",iCnt);
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Time Complexity: O(n)
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int limit;
+
+    printf("Enter number: ");
+    scanf("%d",&limit);
+
+    print_odd_number(limit);
+
+    return 0;
+}
