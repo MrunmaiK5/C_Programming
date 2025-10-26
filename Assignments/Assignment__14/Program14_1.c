@@ -1,0 +1,48 @@
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function name:  DisplayDigit
+//  Description:    Displays the digits in number in reverse order.
+//  Input:          Integer
+//  Output:         Void
+//  Author:         Mrunmai Jitendra Khadpe
+//  Date:           25/10/20025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void DisplayDigit(int iNo)
+{
+    int iDigit = 0;
+    if(iNo<0)
+    {
+        iNo=-iNo;
+    }
+
+    while (iNo != 0)
+    {
+        iDigit = iNo%10;
+        printf("%d\n",iDigit);
+
+        iNo=iNo/10;
+    }
+    
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Time Complexity: O(n)
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue=0;
+
+    printf("Enter number: ");
+    scanf("%d",&iValue);
+
+    DisplayDigit(iValue);
+
+    return 0;
+}
