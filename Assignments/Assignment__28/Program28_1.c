@@ -16,7 +16,7 @@ void Pattern(int iRow, int iCol)
     int i=0,j=0;
     char ch='A';
 
-    for(i=1; i<-=iRow; i++)
+    for(i=1; i<=iRow; i++)
     {
         for(j=1, ch='A'; j<=iCol; j++,ch++)
         {
