@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Function name:  Reverse
-//  Description:    Reverses the givenn string.
+//  Description:    Reverses the given string.
 //  Input:          String
 //  Output:         Void
 //  Author:         Mrunmai Jitendra Khadpe
@@ -13,28 +13,20 @@
 
 void Reverse(char *str)
 {
-    char *start = str;
-    char *end = str;
+    char *temp=str;
 
-    char temp = '\0';
-
-    while(*end != '\0')
+    while (*str != '\0')
     {
-        end++;
-    }
-
-    end--;
-    
-    while(start < end)
-    {
-        temp = *start;
-        *start = *end;
-        *end = temp;
-
-        start++;
-        end--;
+        str++;
     }
     
+    while (str > temp)
+    {
+        printf("%c",*str);
+        str--;
+    }
+    
+    printf("\n");
 }
 
 int main()
