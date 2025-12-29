@@ -45,16 +45,17 @@ void InsertFirst(PPNODE head, int no)
     }
 }
 
-int Addition(PNODE head)
+int Addition(PNODE first)
 {
     int iSum = 0;
 
-    while (head != NULL)
+    while(first != NULL)
     {
-        iSum=iSum+(head -> data);
-        head=head -> next;
+        iSum = iSum + first->data;
+        first = first->next;
     }
-    return iSum; 
+
+    return iSum;
 }
 
 int main()
@@ -67,7 +68,7 @@ int main()
     InsertFirst(&head, 20);
     InsertFirst(&head, 10);
 
-    iRet = Addition(head, iValue);
+    iRet = Addition(head);
     printf("Addition: %d\n",iRet);
     return 0;
 }

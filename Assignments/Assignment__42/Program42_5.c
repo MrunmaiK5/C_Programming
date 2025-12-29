@@ -71,7 +71,7 @@ int main()
     InsertFirst(&head, 230);
     InsertFirst(&head, 110);
 
-    iRet = Minimum(head, iValue);
+    iRet = Minimum(head);
     printf("Minimum number is: %d\n",iRet);
     return 0;
 }

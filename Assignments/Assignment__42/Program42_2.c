@@ -6,12 +6,12 @@
 typedef int BOOL;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Function name:  SearchFirstOcc
-//  Description:    Returns position at which the data was found.
+//  Function name:  SearchLastOcc
+//  Description:    Returns last position at which the data was found.
 //  Input:          PNODE, Integer
 //  Output:         Integer
 //  Author:         Mrunmai Jitendra Khadpe
-//  Date:           17/12/2025
+//  Date:           29/12/2025
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45,15 +45,15 @@ void InsertFirst(PPNODE head, int no)
     }
 }
 
-int SearchFirstOcc(PNODE first, int no)
+int SearchLastOcc(PNODE first, int no)
 {
-    int iCount = 0;
+    int iCount = 0, iValue = 0;
     while (first != NULL)
     {
         iCount++;
         if (first->data == no)
         {
-            break;
+            iValue = iCount;
         }
         first = first->next;
     }
@@ -73,7 +73,7 @@ int main()
     InsertFirst(&head, 20);
     InsertFirst(&head, 10);
 
-    iRet = SearchFirstOcc(head, iValue);
-    printf("First occurence: %d\n",iRet);
+    iRet = SearchLastOcc(head, iValue);
+    printf("Last occurence: %d\n",iRet);
     return 0;
 }

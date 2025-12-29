@@ -47,16 +47,18 @@ void InsertFirst(PPNODE head, int no)
 
 int Maximum(PNODE head)
 {
-    int iMax=head -> data;
-
-    while (head != NULL)
+    int iMax=0;
+    iMax=head->data;
+    
+    while(head!=NULL)
     {
-        if ((head -> data) > iMax)
+        if (head->data > iMax)
         {
-            iMax=head -> data;
+            iMax = head->data;
         }
-        head=head -> next;
+        head=head->next;
     }
+
     return iMax;
 }
 
@@ -71,7 +73,7 @@ int main()
     InsertFirst(&head, 230);
     InsertFirst(&head, 110);
 
-    iRet = Maximum(head, iValue);
+    iRet = Maximum(head);
     printf("Maximum number is: %d\n",iRet);
     return 0;
 }
