@@ -7,10 +7,10 @@ typedef int BOOL;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Function name:  DisplayPrime
-//  Description:    Displays all elements which are prime from singly linked list.
+//  Function name:  SecMaximum
+//  Description:    Returns asecond maximum element from singly linked list.
 //  Input:          PNODE
-//  Output:         Void
+//  Output:         Integer
 //  Author:         Mrunmai Jitendra Khadpe
 //  Date:           17/12/2025
 //
@@ -46,33 +46,28 @@ void InsertFirst(PPNODE head, int no)
     }
 }
 
-void DisplayPrime(PNODE head)
+int SecMaximum(PNODE head)
 {
-    int iNo=0, iCnt=0;
-    while(head != NULL)
+    int iMax=0, iSMax=0;
+    iMax=head->data;
+
+    while(head!=NULL)
     {
-        iNo=head->data;
-
-        for(iCnt=2; iCnt<iNo; iCnt++)
+        if (head->data > iMax)
         {
-            if(iNo%iCnt == 0)
-            {
-                break;
-            }
+            iSMax = iMax;
+            iMax = head->data;
         }
-
-        if (iCnt >= iNo)
-        {
-            printf("%d\t",iNo);
-        }
-        
         head=head->next;
     }
+
+    return iSMax;
 }
 
 int main()
 {
     PNODE head = NULL;
+    int iRet=0;
     
     InsertFirst(&head, 89);
     InsertFirst(&head, 22);
@@ -81,7 +76,12 @@ int main()
     InsertFirst(&head, 20);
     InsertFirst(&head, 11);
 
-    DisplayPrime(head);
+    iRet=SecMaximum(head);
+    printf("Secong maximum: %d\n",iRet);
 
     return 0;
 }
+
+
+
+

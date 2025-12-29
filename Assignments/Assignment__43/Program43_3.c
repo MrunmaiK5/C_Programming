@@ -48,16 +48,16 @@ void InsertFirst(PPNODE head, int no)
 
 int AdditionEven(PNODE head)
 {
-    int iSum = 0, iNo = 0, iCnt = 0;
-
-    while (head != NULL)
+    int iSum =0; 
+    while(head != NULL)
     {
-        if ((head -> data) % 2 == 0)
+        if (head->data % 2 == 0)
         {
-            iSum=iSum +(head -> data);
+            iSum = iSum + head->data;
         }
-        head=head -> next;
+        head=head->next;
     }
+
     return iSum;
 }
 

@@ -48,26 +48,26 @@ void InsertFirst(PPNODE head, int no)
 
 void DisplayPerfect(PNODE head)
 {
-    int iSum = 0, iNo = 0, iCnt = 0;
-
-    while (head != NULL)
+    int iSum = 0, iNo=0, iCnt=0;
+    while(head != NULL)
     {
-        iNo = head -> data;
-        iSum = 0;
+        iNo=head->data;
 
-        for (iCnt = 1; iCnt <= iNo/2; iCnt++)
+        for(iCnt=1; iCnt<=(iNo/2); iCnt++)
         {
-            if ((iNo % iCnt) == 0)
+            if(iNo%iCnt == 0)
             {
                 iSum = iSum + iCnt;
             }
         }
-        
+
         if (iNo == iSum)
         {
-            printf("%d\t", iNo);
+            printf("%d\t",iNo);
         }
-        head = head -> next;   
+        
+        iSum = 0;
+        head=head->next;
     }
 }
 
