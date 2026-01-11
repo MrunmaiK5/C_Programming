@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    //logic
+    int iCnt = 0;
+
+    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    {
+        /* code */
+        printf("%d\t",iCnt);
+    }
+
+}
+
+int main()
+{
+    int iValue=0;
+    printf("Please enter frequency: \n");
+    scanf("%d",&iValue);
+    Display(iValue);
+
+    return 0;
+}
