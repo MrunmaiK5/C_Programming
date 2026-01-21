@@ -1,15 +1,14 @@
-# C_Programming
+# C Programming
 
-This repository contains C programming codes written for regular practice.
-It focuses on understanding core concepts, syntax, and logic in C.
-All programs are kept simple and easy to follow.
+This repository contains basic C programs for core programming and logic-building practice.  
+It includes assignments and practice codes covering fundamental C concepts.
 
 ## Repository Structure
-
 ```
 C_Programming/
-│
-├── Codes/        # All C programs
-├── Assignments/ # Additional programs
-├── README.md    # Repository information
+├── Assignments/   # College/practice assignments
+├── Codes/         # Core C programs and examples
+├── .vscode/       # Editor configuration files
+├── .gitignore
+└── README.md
 ```
