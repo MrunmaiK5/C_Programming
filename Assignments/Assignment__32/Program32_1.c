@@ -15,21 +15,39 @@ void Pattern(int iRow, int iCol)
 {
     int i=0,j=0;
 
-    for(i=1; i<=iRow; i++)
+    for(i = 1; i <= iRow; i++)
     {
-        for(j=1; j<=iCol; j++)
+        for(j = iCol; j >= 1; j--)
         {
-            if (j == iCol-i+1)
+            if(i != j)
             {
-                printf("#\t");
-            }  
+                System.out.printf("*\t");
+            }
             else
             {
-                printf("*\t");
+                System.out.printf("#\t");
             }
         }
-        printf("\n");
+        System.out.println();
     }
+
+    // for(i=1; i<=iRow; i++)
+    // {
+    //     for(j=1; j<=iCol; j++)
+    //     {
+    //         if (j == iCol-i+1)
+    //         {
+    //             printf("#\t");
+    //         }  
+    //         else
+    //         {
+    //             printf("*\t");
+    //         }
+    //     }
+    //     printf("\n");
+    // }
+
+
 }
 
 int main()
